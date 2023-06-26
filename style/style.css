@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+/* ESTILOS HEADER */
+header {
+  background-image: url(../img/background_UCL.jpg);
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+header h1 {
+  font-size: 65px;
+  padding: 15px 0;
+}
+
+/* ESTILOS NAV */
+nav {
+  background-color: #0825ed;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  background-color: #040404;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+nav a:hover {
+  background-color: rgb(250, 251, 253);
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #000040;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul li ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul li ul li a {
+  padding: 8px 10px;
+  color: white;
+}
+
+/* ESTILOS HEADER */
+/* ESTILOS MAIN */
+main {
+  background-color: #020669;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+/* ESTILOS SECTION */
+.section {
+  width: 70%;
+  height: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 10px;
+}
+.section .section__imagen figure {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.section .section__imagen figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.section .section__part1 h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.section .section__part1 p {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: justify;
+}
+.section .section__part2 h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.section .section__part2 p {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: justify;
+}
+.section .section__video {
+  text-align: center;
+}
+.section .section__video video {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .section__tabla h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.section .section__tabla h3 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.section .section__tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+.section .section__tabla table th, .section .section__tabla table td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: center;
+}
+.section .section__redes h2 {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.section .section__redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #0b72e7;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.section .section__redes a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* ESTILOS ASIDE */
+aside {
+  width: 30%;
+  height: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 10px;
+  background-color: #0318cd;
+}
+aside .recomendados {
+  padding: 15px;
+}
+aside .recomendados legend {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+aside .recomendados__contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  top: 0%;
+  margin-bottom: 20px;
+}
+aside .recomendados__contenido img {
+  width: 100px;
+  height: 100px;
+}
+aside .recomendados__contenido p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+aside form {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+aside form fieldset {
+  border: none;
+  padding: 0;
+}
+aside form legend {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+aside form div {
+  margin-bottom: 10px;
+}
+aside form label {
+  display: block;
+  font-weight: bold;
+}
+aside form input[type=text],
+aside form input[type=email],
+aside form textarea {
+  width: 100%;
+  padding: 5px;
+}
+aside form input[type=submit] {
+  background-color: #000000;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+aside form input[type=submit]:hover {
+  background-color: #a09c9c;
+}
+
+/* ESTILOS FOOTER */
+footer a {
+  text-decoration: none;
+  color: white;
+  background-color: #040404;
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin-left: 90%;
+}
+footer a:hover {
+  background-color: #a09c9c;
+}
+
+footer {
+  background-color: #0825ed;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+footer .container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+footer .container h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+footer .container .lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .container .lista li {
+  margin-bottom: 15px;
+}
+footer .grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+  color: #000000;
+}
+footer .grupo2 small {
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,352 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+//Paleta de Colores a usar//
+$colores: (
+"header": #ffffff,
+"nav": #0825ed,
+"main": rgb(241, 235, 157),
+"section": rgb(154, 249, 178),
+"aside": rgb(110, 167, 166),
+"footer": #0825ed
+);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans';
+}
+/* ESTILOS HEADER */
+header{
+
+	background-image: url(../img/background_UCL.jpg);
+	background-size: cover;
+	height: 200px;
+	display: flex;
+  text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	color: map-get( $colores , "header" );
+  & h1{
+    font-size: 65px;
+	  padding: 15px 0;
+  }
+}
+
+
+/* ESTILOS NAV */
+nav{
+  background-color: map-get($colores , "nav" );
+	text-align: center;
+	padding: 20px;
+  
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	padding: 5px 15px;
+	border-radius: 30px;
+	font-size: auto;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+    background-color: #040404;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+	background-color: rgb(250, 251, 253);
+	color: black;
+}
+
+
+nav ul {list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+nav ul li {
+    display: inline-block;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+  
+nav ul li ul {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000040;
+}
+  
+nav ul li:hover > ul {
+    display: inherit;
+}
+  
+nav ul li ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+  
+nav ul li ul li a {
+    padding: 8px 10px;
+    color: white;
+}
+
+/* ESTILOS HEADER */
+
+/* ESTILOS MAIN */
+main{
+	background-color: #020669;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+/* ESTILOS SECTION */
+.section{
+    width: 70%;
+    height: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px;
+    //Formato imagen//
+    & .section__imagen figure{
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      & img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+  }
+  //Formato texto//
+  & .section__part1 h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  & .section__part1 p {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+	text-align: justify;
+  }
+  & .section__part2 h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  & .section__part2 p{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+	text-align: justify;
+  }
+  //Formato video//
+  & .section__video{
+
+  text-align: center;
+    & video{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    }
+  }
+  //Formato Tabla//
+  & .section__tabla h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  & .section__tabla h3{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  & .section__tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    & th, td {
+      border: 1px solid rgb(255, 255, 255);
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  //Formato redes//
+  & .section__redes h2{
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  & .section__redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #0b72e7;
+    text-align: center;
+    transition: all 300ms ease;
+    &:hover{
+        color: rgb(0, 0, 0);
+    }
+  }
+}
+/* ESTILOS ASIDE */
+aside{
+    width: 30%;
+    height: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px;
+    background-color: #0318cd;
+    //Formato contenido//
+    & .recomendados{
+      padding: 15px;
+      & legend {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #ffffff;
+      }
+    }
+    & .recomendados__contenido{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      top: 0%;
+      margin-bottom: 20px;
+      & img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      & p{
+        font-size: 15px;
+        color: #ffffff;
+        margin-bottom: 25px;
+      text-align: justify;
+      }
+    }
+    //Formato Formulario//
+    & form {
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 15px;
+      & fieldset {
+        border: none;
+        padding: 0;
+      }
+      
+      & legend {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+      }
+      
+      & div {
+        margin-bottom: 10px;
+      }
+      
+      & label {
+        display: block;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 5px;
+      }
+      
+      input[type="submit"] {
+        background-color: #000000;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: #a09c9c;
+        }
+      }
+    }
+    
+}
+
+/* ESTILOS FOOTER */
+footer a{
+	text-decoration: none;
+	color: white;
+    background-color: #040404;
+    padding: 5px 15px;
+    border-radius: 30px;
+    margin-left: 90%;
+    &:hover{
+      background-color: #a09c9c;
+    }
+}
+footer {
+    background-color: map-get($colores, "footer" );
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+
+    & .container {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      & h3{
+        color: #fff;
+        margin-bottom: 15px;
+        font-size: 15px;
+      }
+      & .lista{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    & .grupo2{
+      padding: 15px 10px;
+      text-align: center;
+      color: #000000;
+      & small{
+        font-size: 15px;
+    }
+  }
+  }
